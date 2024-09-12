@@ -1,0 +1,9 @@
+<form [formGroup]="nameForm" (ngSubmit)="submit()">
+  <input type="text" formControlName="name"><br><br>
+  <button type="submit">submit</button>
+</form>
+
+<p>{{greeting}}</p>
+<br><br>
+<button type="submit" (click)="getImage()">Show Image</button><br>
+<img src="{{imageUrl}}">
